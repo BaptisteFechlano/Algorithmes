@@ -1,0 +1,26 @@
+ALGORITHME application_tri_selection
+    tabint EST UN TABLEAU D'ENTIERS
+    taille EST UN ENTIERS
+
+DEBUT
+    PROCEDURE tri_selection(tabint, taille)
+        i EST UN ENTIER
+        j EST UN ENTIER
+        min EST UN ENTIER
+        tmp EST UN ENTIER
+    DEBUT
+        POUR i ALLANT DE 0 A taille-1 [SAUT DE 1]
+            min <- i
+            POUR j ALLANT DE i+1 A taille [SAUT DE 1]
+                SI tabint[j] < tabint[min] ALORS
+                    min <- j
+            FIN POUR
+
+            SI min != i ALORS
+                tmp <- tabint[min]
+                tabint[min] <- tabint[i]
+                tabint[i] <- tmp
+            FIN SI
+        FIN POUR
+    FIN
+FIN

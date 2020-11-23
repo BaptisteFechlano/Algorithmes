@@ -1,0 +1,114 @@
+-------------------------------------------------------------
+PAS DE REGLE Reelement définis
+l'informatitien devra interprété selon son langage
+-------------------------------------------------------------
+
+/*ALGORITHME <nom>
+    <déclaration....>
+
+DEBUT
+    <instruction....>
+FIN
+*/
+
+PRINT("Bonjour")
+AFFICHER("Tuas ..."), <variable>, "ans")
+
+READ(<variable)
+<variable> <- LIRE("Quel âge as-tu? ")
+
+-------------------------------------------------------------
+
+variable:
+
+ENTIER, REEL, BOOLEEN, CARACTERE, CHAINE, TYPE_PERSONNALISE
+
+nom : pas d espace pas d accents :
+
+mavariable
+ma_variable
+MaVariable
+_mavariable
+
+nombre EST UN ENTIER //déclaration au début et initialisation ensuite en général
+PI EST UN REEL
+pseudo EST UNE CHAINE
+
+ex nombre <- 16
+PI <- 3.14
+pseudo <- "Chuck Norris
+
+--------------------------------------------------------------
+
+age EST UN ENTIER <- 24
+
+SI age > 18 ALORS
+    AFFICHER("Tu es majeur")
+SINON
+    AFFICHER("Tu es mineur")
+FIN SI
+
+--------------------------------------------------------------
+
+choixCalcul EST UN ENTIER <-2
+nb1 EST UN ENTIER <- 16
+nb2 EST UN ENTIER <- 23
+
+SELON choixCalcul
+    1 : addition(nb1, nb2)
+    2 : soustraction(nb1, nb2)
+    3 : quitter_programme()
+    AUTREMENT : AFFICHER("Commande inconue)
+FIN SELON
+
+--------------------------------------------------------------
+
+i EST UN ENTIER <- 0
+
+TANT QUE i < 10 //while
+    AFFICHER("i =", i)
+    i < i + 1
+FIN TANT QUE
+
+REPETER // do while
+    AFFICHER("i =", i)
+    i < i + 1
+TANT QUE i < 10
+
+POUR i ALLANT DE 0 A 10 [SAUT DE <pas>]  //boucle for
+    AFFICHER ("i = ", i)
+FIN POUR
+
+--------------------------------------------------------------
+
+//Procédure, ancètre de la fonction qui ne retourne rien
+
+PROCEDURE addition(nb1, nb2)
+    res EST UN ENTIER
+DEBUT
+    res <- nb1 + nb2
+    AFFICHER("res = ", res)
+FIN
+
+FONCTION addition(nb1, nb2) // qui retourne quelque chose
+    res EST UN ENTIER
+DEBUT
+    res <- nb1 + nb2
+    RETOURNER res
+FIN
+
+--------------------------------------------------------------
+
+METHODE_OBJECT peux retourner ou non (= FONCTION ou PROCEDURE)
+
+--------------------------------------------------------------
+
+nombre EST UN ENTIER
+
+tab_nombre EST UN TABLEAU D'ENTIERS
+tab_nombre EST UN TABLEAU D'ENTIERS [14, 26, -133]
+
+liste_joueurs EST UNE LISTE DE JOUEURS
+inventaire EST UNE LISTE D'ITEMS ["épée", "potion de mana"] //ou classe d'objets
+
+inventaire <- "bouclier" //pour ajouter dans inventaire

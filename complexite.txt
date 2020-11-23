@@ -1,0 +1,86 @@
+Donald knuth PIONNIER
+-------------------------------------------------------------
+complexité = calcul du meilleur algorithme
+-------------------------------------------------------------
+-------------------------------------------------------------
+PROCEDURE verifier_age(age)
+
+DEBUT
+    SI age > 18 ALORS
+        AFFICHER("Tu es majeur")
+    SINON
+        AFFICHER("Tu es mineur")
+    FIN SI
+FIN
+-------------------------------------------------------------
+
+1er cas tout se passe bien : Meilleur scénario
+2em cas non : traitement supp maximum donc pire scénario
+3em cas moyen : traitement supp scénario moyen
+
+-------------------------------------------------------------
+
+Exemple calcul de complexité d'algorithme:
+
+
+Procédure "Simple" instruction élémentaire
+- Affectation
+- Calcul
+- Comparaison
+
+
+-------------- T(n) -----------------
+
+ALGORITHME algo_exemple
+    nb EST UN ENTIER
+    nb2 EST UN ENTIER
+DEBUT
+    nb <- 14
+    AFFICHER("Bonjour tout le monde")
+    nb2 <- nb - 6
+FIN
+----
+calcul de complexité en temps:
+
+1 (affectation) + 1 (opérateur) + 1 (resultat) = 3
+
+----
+
+FONCTION somme_nombre(n) : ENTIER
+    i EST UN ENTIER 
+    res EST UN ENTIER
+
+DEBUT
+    res <- 0
+
+    POUR i ALLANT DE 0 A n [SAUT DE 1]
+        res <- res + 1
+    FIN POUR
+
+    RETOURNER res
+FIN
+----
+calcul de complexité en temps:
+
+1 (initialisation de res)
+
+Boucle : N fois (nb opération dans la boucle)
+
+1 + 1 (res <- res + 1) = 2
+1 (comparaison) + 1 (saut) = 2
+
+boucle = 5n
+
+T(n) = 4n + 1
+
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+O(1)            : complexité constante
+O(log(n))       : complexité logarithmique
+O(n)            : linéaire
+O(n x log(n))   : presque linéaire
+O(n²)           : quadratique
+O(n3)           : cubique
+O(2^n)          : exponentielle
+O(n!)           : factorielle //calcul énorme

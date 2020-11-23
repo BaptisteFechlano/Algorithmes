@@ -1,0 +1,42 @@
+//classification d'elements
+//Ordonner des éléments
+
+Article selon date de publication
+Produits selon leurs prix
+Joueurs selon leurs pseudo
+
+PROCEDES -> Par comparaisons et test
+
+Prise en compte :
+    -Stabilité d'un algo par rapport aux données ?
+     Stable = ordre relatif
+
+    -Mise "en place" modification directement sur les données ?
+
+    -Opération en interne ou en externe ?
+
+Comment bien choisir son algo :
+    dépend de la taille des données
+    dépend du rangement initial
+    dépend de la puissance du calcul (mém vive, espace stockage)
+
+ALGO lent / rapide en fonction des données à traiter
+
+-----------------------------------------------------
+
+Algorithme celebre
+    tri par selection
+    tri par insertion
+    tri à bulle
+    tri fusion
+    tri rapide
+    tri par tas
+    etc.
+
+Algorithme hybride
+    python,
+    c++,
+    etc.
+
+Algo de tri en parallele
+    présente les résultat au fur et à mesure // temps réel

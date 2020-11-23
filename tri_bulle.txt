@@ -1,0 +1,40 @@
+Complexité lente efficace 15 à 20 données
+
+O(n²) = quadratique
+--------------------------------------------------------
+--------------------------------------------------------
+14 2 25 64 58
+2 14 25 64 58
+2 14 25 64 58
+2 14 25 58 64
+
+inversera les nombres si besoin en fonction du tri petit a petit
+--------------------------------------------------------
+
+ALGORITHME application_tri_bulle
+    tabint EST UN TABLEAU D'ENTIER
+    taille_tab EST UN ENTIER //Taille du tableau
+
+DEBUT
+    PROCEDURE tri_bulle(tabint, taille_tab)
+        tab_trie EST UN BOOLEEN <- Faux
+        i EST UN ENTIER
+        tmp EST UN ENTIER
+    DEBUT
+        TANT QUE tab_trie == Faux
+            tab_trie <- Vrai
+            POUR i ALLANT DE 0 A taille_tab - 1 [SAUT DE 1]
+                SI tabint[i] > tabint[i+1] ALORS
+                    //inverser les valeurs , variable temporaire
+                    tmp <- tabint[i+1]
+                    tabint[i+1] <- tabint[i]
+                    tabint[i] <- tmp
+                    tab_trie <- Faux
+                    FIN SI
+            FIN POUR
+
+            taille_tab <- taille_tab - 1
+        FIN TANT QUE
+    FIN
+
+FIN

@@ -1,0 +1,22 @@
+ALGORITHME application_tri_insertion
+    tabint EST UN TABLEAU D'ENTIERS
+    taille EST UN ENTIERS
+DEBUT
+    PROCEDURE tri_insertion(tabint, taille)
+        i EST UN ENTIER
+        j EST UN ENTIER
+        tmp EST UN ENTIER //variable temporaire afin de sauvegarder les recherches
+
+        POUR i ALLANT DE 0 A taille [SAUT DE 1]
+            tmp <- tabint[i]
+            j <- i
+
+            TANT QUE j > 0 ET tabint[j-1] > tmp ALORS
+                tabint[j] <- tabint[j-1]
+                j <- j-1
+            FIN TANT QUE
+
+            tabint[j] <- tmp
+        FIN POUR
+    FIN
+FIN
